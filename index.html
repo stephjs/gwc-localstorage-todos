@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo: Todo List with Local Storage</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+	.listholder {
+		clear: both;
+	}
+	p {
+		display: inline-block;
+		margin: 0 0 20px 10px;
+	}
+	input {
+		padding: 7px;
+	    margin: 0 5px;
+	}
+	.addtext {
+		font-weight: 700;
+		font-size: 25px;
+	}
+	</style>
+</head>
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<h1 id="storage">Local Storage To Do List</h1>
+			<h4>Local storage lets web applications store data locally (client side) within the users browser. Items in the to do list can be added and deleted manually by the user. The local storage object can completely deleted by clearing the browser cache.</h4>
+		</div>
+	</div>
+	<div class="container">
+		<form>
+			<span class="addtext">Add a New Item</span>
+			<input type="text" class="todo" id="todo">
+			<input type="submit" id="add" class="btn btn-primary btn-lg">
+		</form>
+		<hr>
+		<div id="list"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
